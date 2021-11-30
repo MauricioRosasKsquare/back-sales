@@ -4,14 +4,14 @@
   "description": "Sales Point",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/app.js",
-    "dev": "nodemon ./src/app.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "author": "Mauricio Rosas & Roger Osalde",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "pm2": "^5.1.2",
     "mongoose": "^6.0.12"
   },
   "devDependencies": {
